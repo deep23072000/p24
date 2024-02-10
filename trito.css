@@ -33,6 +33,7 @@ body{
     align-items: center;
     position: sticky;
     top: 0px;
+    overflow-x: hidden;
 }
 .navbar ul li{
     padding: 20px;
@@ -77,12 +78,19 @@ body{
    
 }
 
+@media(max-width:425px){
+    #client{
+        display: none;
+    }
+}
+
 /* ==============dedication=========== */
 
 #dedication{
     display: flex;
     justify-content: space-evenly;
     padding: 40px;
+    overflow-x: hidden;
 }
 
 /* ==============skills============ */
@@ -111,6 +119,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding: 40px;
+    overflow-x:hidden;
 }
 
 
@@ -118,11 +127,16 @@ body{
     display: flex;
     justify-content: space-evenly;
     background-image: url('https://itemsstore.net/html/trito/img/about/background.jpg');
+    overflow-x: hidden;
 
 }
 
 #about div img{
     width: 400px;
+}
+
+#aboutdiv2{
+    padding: 0px;
 }
 
 #twelve{
@@ -134,6 +148,39 @@ body{
     top: 1350px;
     left: 100px;
     background-color: white;
+}
+
+
+@media(max-width:425px){
+    #mainskills{
+        display: block;
+    }
+
+    #skillsdiv2{
+        padding: 10px;
+    }
+    #skillsdiv2 div{
+        margin: 10px;
+    }
+
+    #about{
+        display: block;    
+    }
+    
+#twelve{
+   
+    
+    width: 250px;
+    padding: 10px;
+    position: absolute;
+    top: 1300px;
+    left: 100px;
+    background-color: white;
+}
+
+#aboutdiv2{
+    padding: 40px;
+}
 }
 
 /* ===================five============= */
@@ -159,6 +206,14 @@ body{
     transition: scale 1s;
 }
 
+@media(max-width:425px){
+    #five{
+        display: grid;
+        grid-template-columns:auto;
+        
+    }
+}
+
 /* =========================== */
 
 #contact{
@@ -166,6 +221,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding: 100px;
+    overflow-x: hidden;
 }
 
 #contactdiv1{
